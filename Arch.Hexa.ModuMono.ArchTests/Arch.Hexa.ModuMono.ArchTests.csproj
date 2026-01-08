@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Api\Arch.Hexa.ModuMono.BuildingBlocks.Api.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Application\Arch.Hexa.ModuMono.BuildingBlocks.Application.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Contracts\Arch.Hexa.ModuMono.BuildingBlocks.Contracts.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Domain\Arch.Hexa.ModuMono.BuildingBlocks.Domain.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Infrastructure\Arch.Hexa.ModuMono.BuildingBlocks.Infrastructure.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Customers.RestApi\Arch.Hexa.ModuMono.Customers.RestApi.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Customers.Application\Arch.Hexa.ModuMono.Modules.Customers.Application.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Customers.Domain\Arch.Hexa.ModuMono.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Customers.Infrastructure\Arch.Hexa.ModuMono.Modules.Customers.Infrastructure.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Orders.Application\Arch.Hexa.ModuMono.Modules.Orders.Application.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Orders.Domain\Arch.Hexa.ModuMono.Modules.Orders.Domain.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Orders.Infrastructure\Arch.Hexa.ModuMono.Modules.Orders.Infrastructure.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Orders.RestApi\Arch.Hexa.ModuMono.Orders.RestApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

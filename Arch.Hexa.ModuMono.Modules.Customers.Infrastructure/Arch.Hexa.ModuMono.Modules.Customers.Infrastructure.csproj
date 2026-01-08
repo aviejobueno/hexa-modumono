@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Infrastructure\Arch.Hexa.ModuMono.BuildingBlocks.Infrastructure.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Customers.Application\Arch.Hexa.ModuMono.Modules.Customers.Application.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Customers.Domain\Arch.Hexa.ModuMono.Modules.Customers.Domain.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.Modules.Orders.Application\Arch.Hexa.ModuMono.Modules.Orders.Application.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Contracts\Arch.Hexa.ModuMono.BuildingBlocks.Contracts.csproj" />
+    <ProjectReference Include="..\Arch.Hexa.ModuMono.BuildingBlocks.Domain\Arch.Hexa.ModuMono.BuildingBlocks.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
